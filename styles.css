@@ -1,0 +1,112 @@
+/* ========== BASIC RESET ========== */
+* { box-sizing: border-box; }
+
+/* Page background, font, and text color */
+body {
+  background: #fff8ee;    /* warm classroom vibe */
+  font-family: cursive;
+  margin: 0;
+  color: #5a1b1b;         /* refined maroon for body text */
+}
+
+/* Headings */
+h1, h2, h3 { text-align: center; margin: 10px 0; }
+h1 { font-size: 40px; font-weight: 800; color: #6a0dad; } /* vivid purple */
+h2 { font-size: 26px; font-weight: 800; color: #c62828; } /* bright red */
+h3 { font-size: 22px; font-weight: 700; color: #b8860b; } /* golden */
+
+/* ========== NAVIGATION BAR ========== */
+.topbar {
+  background: #b6c48e;          /* soft olive */
+  border-bottom: 2px dashed #333;
+  padding: 10px 16px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  text-decoration: none;
+  color: #222;
+  font-family: monospace;
+  font-size: 24px;               /* bigger so it balances right side */
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: #222;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.menu a:hover {
+  color: #c62828;
+  background: #f2f2f2;
+}
+
+/* ========== LAYOUT ========== */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+.card {
+  background: #fffdf8;
+  border: 2px solid #ead3b0;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 14px 0;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+}
+
+/* Avatar image (About Me section) */
+.avatar {
+  width: 220px;
+  height: 220px;
+  border: 3px solid #6a0dad;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 10px auto;
+  object-fit: cover;
+}
+
+/* Gallery section: 5 images per row */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border: 3px solid #6a0dad;
+  border-radius: 10px;
+}
+
+/* Wide images (Sports & Book sections) */
+.wide-image {
+  width: 420px;
+  height: 300px;
+  border: 3px solid #6a0dad;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px auto;
+  object-fit: cover;
+}
+
+/* Square bullet list style */
+.square-list { list-style-type: square; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 12px 0 18px;
+  color: #555;
+}
